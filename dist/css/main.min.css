@@ -1275,14 +1275,27 @@ img {
 .homeIntro__wrapper {
   padding: 2rem 0rem;
 }
+.homeIntro__contents {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
 .homeIntro .title {
-  padding: 0rem 0rem;
+  text-align: left;
+  margin-bottom: 4rem;
+}
+.homeIntro .title h2 {
+  font-size: 3.5rem;
+  font-weight: 700;
 }
 .homeIntro .leftIntro img:first-child {
   position: relative;
   max-width: 20rem;
   border-top-left-radius: 10rem;
   border-top-right-radius: 10rem;
+}
+.homeIntro .leftIntro .next {
+  position: relative;
 }
 .homeIntro .leftIntro .next a:first-child {
   display: block;
@@ -1293,6 +1306,8 @@ img {
 }
 .homeIntro .leftIntro .next a:last-child {
   bottom: 0;
+  top: -15rem;
+  left: 5rem;
   position: absolute;
   display: flex;
   justify-content: center;
@@ -1306,6 +1321,9 @@ img {
   position: absolute;
   max-width: 15rem;
   border-radius: 400px;
+}
+.homeIntro .rightIntro p {
+  margin-bottom: 2rem;
 }
 
 .places small {

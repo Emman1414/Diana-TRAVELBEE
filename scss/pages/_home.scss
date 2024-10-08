@@ -192,9 +192,21 @@
   &__wrapper {
     padding: 2rem 0rem;
   }
-  .title {
-    padding: 0rem 0rem;
+
+  &__contents{
+    @include evenGrid (2,1rem);
   }
+
+  .title {
+    text-align: left;
+    margin-bottom: 4rem;
+    h2{
+      font-size: 3.5rem;
+      font-weight: 700;
+    }
+  }
+
+
   .leftIntro {
     img:first-child {
       position: relative;
@@ -203,6 +215,7 @@
       border-top-right-radius: 10rem;
     }
     .next {
+      position: relative;
       a:first-child {
         display: block;
         border-radius: 50rem;
@@ -212,6 +225,8 @@
       }
       a:last-child {
         bottom: 0;
+        top: -15rem;
+        left: 5rem;
         position: absolute;
         display: flex;
         justify-content: center;
@@ -226,6 +241,12 @@
           border-radius: 400px;
         }
       }
+    }
+  }
+
+  .rightIntro{
+    p{
+      margin-bottom: 2rem;
     }
   }
 }
