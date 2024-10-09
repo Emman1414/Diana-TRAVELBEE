@@ -2,6 +2,10 @@
 @use "../base/" as *;
 
 .header {
+  .container {
+    margin: 2.5rem 8rem;
+  }
+
   padding: 2rem 0;
   font-family: $font--primary;
   margin: 0 auto;
