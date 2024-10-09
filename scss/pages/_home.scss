@@ -67,6 +67,11 @@
     a.btn.bg--accent {
       margin-top: 2rem;
       border-radius: 0rem;
+      &:hover {
+        background-color: $clr--light;
+        border: 1px solid $clr--dark;
+        color: $clr--dark;
+      }
     }
   }
 }
@@ -104,8 +109,10 @@
 
   //   Button
   .homeBanner__btn {
-    position: relative;
+    position: absolute;
     display: flex;
+    bottom: 30%;
+    top: 185%;
     align-items: center;
     flex-direction: column;
     border-radius: 100px;
@@ -113,7 +120,7 @@
     max-height: 50px;
     background-color: #fff;
     z-index: 10;
-    transform: translateY(18rem);
+    // transform: translateY(18rem);
     a:nth-child(1) {
       position: absolute;
       display: flex;
@@ -247,6 +254,14 @@
     p {
       margin-bottom: 2rem;
     }
+    a {
+      border-radius: 0rem;
+      &:hover {
+        background-color: transparent;
+        border: 1px solid $clr--accent;
+        color: $clr--dark;
+      }
+    }
   }
 }
 
@@ -318,6 +333,12 @@
 
   a.btn.bg--accent {
     border-radius: 0rem;
+
+    &:hover {
+      background-color: transparent;
+      border: 1px solid $clr--accent;
+      color: $clr--dark;
+    }
   }
 }
 
@@ -367,7 +388,7 @@
       top: 10px;
       right: 25px;
       i {
-        transform: translateY(1.5rem);
+        transform: translateY(2rem);
         padding: 1rem 1.2rem;
         position: absolute;
         width: 50px;
@@ -449,7 +470,8 @@
       form input {
         width: 85%;
         background-color: #fff;
-        border: 1px solid rgba(71, 68, 68, 0.205);
+        border-bottom: 2px solid rgba(71, 68, 68, 0.205);
+        border-left: 1px solid rgba(71, 68, 68, 0.205);
       }
       a.btn.bg--accent {
         display: flex;
@@ -461,6 +483,11 @@
         height: 10px;
         background-color: $clr--dark;
         border: 1px solid $clr--dark;
+        &:hover {
+        background-color: $clr--light;
+        border: 1px solid $clr--dark;
+        color: $clr--dark;
+      }
       }
     }
 
@@ -495,11 +522,18 @@
 }
 
 .homeBottom {
-  position: relative; 
   font-family: $clr--light;
   padding: 5rem 0;
+
+  .container {
+    padding: 0rem 0rem;
+  }
+
   &__wrapper {
     display: flex;
+  }
+
+  .image__slider {
     position: relative;
   }
   .title {
@@ -516,7 +550,7 @@
       color: $clr--dark;
       i {
         color: purple;
-     
+
         font-size: 1.5rem;
       }
     }
@@ -525,7 +559,7 @@
     position: relative;
     img {
       position: relative;
-      width: 100%;
+      width: 100vw;
       height: 300px;
     }
   }
@@ -537,29 +571,28 @@
   //   }
   // }
 
-  .slider__controls {
-    position: absolute;
-    display: flex;
-    justify-content: space-between;
-    width: 5rem;
-    pointer-events: none; /* To allow easy clicking on slider */
-    
-     a {
-      pointer-events: all; /* Enable clicks on arrows */
-      color: $clr--light;
-      font-size: 1.5rem;
-      transition: color 0.3s;
-      text-align: center;
-      border-radius: 300px;
+  // .homeBottom__controls {
+  //   position: absolute;
+  //   display: flex;
+  //   justify-content: space-between;
+  //   width: 5rem;
 
-      &.prev{
-        position: absolute;
-        left: 0rem;
-      }
-      &.next{
-        position: absolute;
-        right:0rem;
-      }
-     }
-  }
+  //   a {
+
+  //     color: $clr--light;
+  //     font-size: 1.5rem;
+  //     transition: color 0.3s;
+  //     text-align: center;
+  //     border-radius: 300px;
+
+  //     &.prev {
+  //       position: absolute;
+  //       left: 0rem;
+  //     }
+  //     &.next {
+  //       position: absolute;
+  //       right: 0rem;
+  //     }
+  //   }
+  // }
 }
