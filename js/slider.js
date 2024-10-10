@@ -1,14 +1,4 @@
-// var slider = tns({
-//   container: ".image__slider",
-//   items: 6,
-//   speed: 200,
-//   slideBy: "1",
-//   autoplay: false,
-//   containerControls: "#controls",
-//   prevButton: ".prev",
-//   nextButton: ".next",
-//   nav: false,
-// });
+
 
 var slider = tns({
   container: ".image__slider",
@@ -17,9 +7,10 @@ var slider = tns({
   slideBy: "1",
   autoplay: true,
   controlsContainer: "#controls",
-  prevButton: ".prev",
   nextButton: ".next",
-  nav: false,
+  prevButton: ".prev",
+  
+  // nav: false,
   responsive: {
     1250: {
       items: 6,

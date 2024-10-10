@@ -1,7 +1,7 @@
 @use "../abstract" as *;
 @use "../base/" as *;
 
-.homeBottom .tns-outer {
+.Bottom .tns-outer {
   overflow: hidden;
   max-width: 100%;
 
@@ -14,7 +14,7 @@
   }
 }
 
-.homeBottom .tns-nav {
+.Bottom .tns-nav {
   text-align: center;
   button {
     margin: 2rem 0.5rem;
@@ -34,43 +34,18 @@
   position: absolute;
   .prev {
     color: $clr--light;
-    font-size: 2rem;
+    font-size: 3rem;
     position: relative;
-    bottom:-8rem;
+    bottom: -8rem;
     left: 4rem;
-    &:hover{
+    &:hover {
       color: $clr--dark;
-    }
-    @include mediaQuery(520px) {
-      display: none;
     }
   }
   .next {
     @extend .prev;
-    left: 90rem;
-    bottom:-8rem;
+    left: 140rem;
+    bottom: -8rem;
     position: relative;
   }
 }
-
-// @media (max-width: 520px) {
-//   .tns-outer {
-//     max-width: 100%;
-//   }
-
-//   .tns-nav {
-//     bottom: 70px;
-//     right: 30%;
-//     transform: translateX(50%);
-
-//     button {
-//       margin: 0 0.2rem;
-//       width: 0.4rem;
-//       height: 0.4rem;
-//     }
-//   }
-
-//   .tns-nav button.tns-nav-active {
-//     background-color: $clr--accent;
-//   }
-// }

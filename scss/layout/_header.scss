@@ -36,6 +36,9 @@
   &__nav2 {
     display: flex;
     gap: 2rem;
+    .naiiba {
+      color: $clr--accent;
+    }
     a {
       color: $clr--light;
     }

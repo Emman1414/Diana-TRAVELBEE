@@ -948,6 +948,7 @@ fieldset,
 form,
 label,
 input,
+.contact__form textarea,
 textarea,
 legend,
 table,
@@ -1125,6 +1126,9 @@ img {
   display: flex;
   gap: 2rem;
 }
+.header__nav2 .naiiba {
+  color: #556cee;
+}
 .header__nav2 a {
   color: #fff;
 }
@@ -1232,6 +1236,12 @@ img {
   margin-bottom: 2rem;
   color: #fff;
 }
+.homeBanner__content p img {
+  position: absolute;
+  width: 15rem;
+  left: 112%;
+  height: 15rem;
+}
 .homeBanner__content a.btn.bg--accent {
   margin-top: 2rem;
   border-radius: 0rem;
@@ -1267,11 +1277,62 @@ img {
   display: flex;
   justify-content: center;
 }
+.homeBan .cards--a {
+  position: absolute;
+  font-family: "Playfair Display", serif;
+  background-color: #00000d;
+  height: 17rem;
+  transform: rotate(30deg);
+  bottom: 250%;
+  left: 0;
+}
+.homeBan .cards--a img {
+  position: relative;
+  padding: 1rem 1rem;
+  width: 15rem;
+  height: 10rem;
+}
+.homeBan .cards--a h2 {
+  position: relative;
+  padding: 0rem 1rem;
+  color: #fff;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.homeBan .cards--a h2 small {
+  font-weight: 100;
+}
+.homeBan .cards--b {
+  position: absolute;
+  font-family: "Playfair Display", serif;
+  background-color: #fff;
+  height: 17rem;
+  transform: rotate(-30deg);
+  right: 0;
+  top: 200%;
+}
+.homeBan .cards--b img {
+  position: relative;
+  padding: 1rem 1rem;
+  width: 15rem;
+  height: 10rem;
+}
+.homeBan .cards--b h2 {
+  position: relative;
+  padding: 0rem 1rem;
+  color: #00000d;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.homeBan .cards--b h2 small {
+  font-weight: 100;
+}
 .homeBan .homeBanner__btn {
   position: absolute;
   display: flex;
-  bottom: 30%;
-  top: 185%;
+  top: 290%;
   align-items: center;
   flex-direction: column;
   border-radius: 100px;
@@ -1346,91 +1407,50 @@ img {
   display: flex;
 }
 
-.homeIntro {
-  padding: 5rem 0rem;
+.intro {
+  position: relative;
+  background-color: #fff;
+  padding: 2rem 0;
 }
-.homeIntro__wrapper {
-  padding: 2rem 0rem;
-}
-.homeIntro__contents {
+.intro__wrapper {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
+  gap: 0rem;
 }
-.homeIntro .title {
+.intro .title {
   text-align: left;
   margin-bottom: 4rem;
 }
-.homeIntro .title h2 {
+.intro .title h2 {
   font-size: 3.5rem;
   font-weight: 700;
 }
-.homeIntro .leftIntro img:first-child {
-  position: relative;
-  max-width: 20rem;
+.intro img:first-child {
+  max-width: 29rem;
   border-top-left-radius: 10rem;
   border-top-right-radius: 10rem;
 }
-.homeIntro .leftIntro .next {
-  position: relative;
-}
-.homeIntro .leftIntro .next a:first-child {
-  display: block;
-  border-radius: 50rem;
-  width: 100px;
-  height: 100px;
-  background-color: #fff;
-}
-.homeIntro .leftIntro .next a:last-child {
-  bottom: 0;
-  top: -15rem;
-  left: 5rem;
+.intro img:last-child {
+  border: 15px solid #fff;
   position: absolute;
-  display: flex;
-  justify-content: center;
-  border-radius: 50rem;
-  width: 18rem;
-  height: 18rem;
-  background-color: #fff;
-}
-.homeIntro .leftIntro .next a:last-child img {
   margin-top: 1.5rem;
   position: absolute;
-  max-width: 15rem;
+  max-width: 20rem;
   border-radius: 400px;
+  right: 83rem;
+  top: 48rem;
 }
-.homeIntro .rightIntro p {
+.intro .intro__right p {
+  max-width: 40rem;
   margin-bottom: 2rem;
 }
-.homeIntro .rightIntro a {
+.intro .intro__right a {
   border-radius: 0rem;
 }
-.homeIntro .rightIntro a:hover {
+.intro .intro__right a:hover {
   background-color: transparent;
   border: 1px solid #556cee;
   color: #00000d;
-}
-
-.places small {
-  color: #556cee;
-  font-weight: 700;
-}
-.places small:hover {
-  color: #00000d;
-}
-
-.dates small {
-  font-weight: 500;
-  color: #00000d;
-  opacity: 0.5;
-}
-
-.ReadMe small {
-  color: #00000d;
-  font-weight: 700;
-}
-.ReadMe small:hover {
-  color: #556cee;
 }
 
 .homeDestination {
@@ -1650,6 +1670,733 @@ img {
 .homeBottom__wrapper {
   display: flex;
 }
+.homeBottom .title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.homeBottom .title h2 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+.homeBottom .title small {
+  opacity: 0.9;
+  display: flex;
+  color: #00000d;
+}
+.homeBottom .title small i {
+  color: purple;
+  font-size: 1.5rem;
+}
+.homeBottom .cards {
+  position: relative;
+}
+.homeBottom .cards img {
+  position: relative;
+  width: 100vw;
+  height: 300px;
+}
+.homeBottom .places small {
+  color: #556cee;
+  font-weight: 700;
+}
+.homeBottom .places small:hover {
+  color: #00000d;
+}
+.homeBottom .dates small {
+  font-weight: 500;
+  color: #00000d;
+  opacity: 0.5;
+}
+.homeBottom .ReadMe small {
+  color: #00000d;
+  font-weight: 700;
+}
+.homeBottom .ReadMe small:hover {
+  color: #556cee;
+}
+
+.aboutBanner {
+  position: relative;
+  background: url(/IMG/wow.png);
+  background-color: #00000d;
+  width: 96vw;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  display: flex;
+  font-display: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 2.5rem;
+}
+.aboutBanner__wrapper {
+  padding: 2rem 1rem;
+}
+.aboutBanner__content {
+  position: relative;
+  font-family: "Playfair Display", serif;
+}
+.aboutBanner__content h1 {
+  color: #fff;
+  font-size: 6rem;
+  font-weight: 700;
+}
+.aboutBanner__content p {
+  margin-bottom: 2rem;
+  color: #fff;
+}
+.aboutBanner__content p img:nth-child(2) {
+  position: absolute;
+  width: 10rem;
+  left: 100%;
+  height: 10rem;
+}
+.aboutBanner__content p img {
+  position: absolute;
+  width: 10rem;
+  left: -10%;
+  height: 10rem;
+}
+.aboutBanner__content a.btn.bg--accent {
+  margin-top: 2rem;
+  border-radius: 0rem;
+}
+.aboutBanner__content a.btn.bg--accent:hover {
+  background-color: #fff;
+  border: 1px solid #00000d;
+  color: #00000d;
+}
+
+.homePost {
+  background-color: #fff;
+  padding: 5rem 0;
+}
+.homePost__wrapper {
+  padding: 2rem 1rem;
+}
+.homePost .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.homePost .title p {
+  max-width: 70rem;
+}
+.homePost__blog {
+  display: flex;
+  gap: 1rem;
+}
+.homePost__blog img {
+  width: 350px;
+  height: 150px;
+}
+.homePost__blog--details {
+  color: #00000d;
+}
+.homePost__blog--details h2 {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+.homePost__blog--details p {
+  margin-bottom: 1rem;
+}
+.homePost__blog--details .dates {
+  margin-bottom: 1rem;
+}
+.homePost__images {
+  display: grid;
+  grid-template-columns: 1.5fr 1.5fr;
+  width: 100%;
+  gap: 3rem;
+}
+.homePost__content {
+  display: flex;
+}
+
+.intro {
+  position: relative;
+  background-color: #fff;
+  padding: 2rem 0;
+}
+.intro__wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0rem;
+}
+.intro .title {
+  text-align: left;
+  margin-bottom: 4rem;
+}
+.intro .title h2 {
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+.intro img:first-child {
+  max-width: 29rem;
+  border-top-left-radius: 10rem;
+  border-top-right-radius: 10rem;
+}
+.intro img:last-child {
+  border: 15px solid #fff;
+  position: absolute;
+  margin-top: 1.5rem;
+  position: absolute;
+  max-width: 20rem;
+  border-radius: 400px;
+  right: 83rem;
+  top: 48rem;
+}
+.intro .intro__right {
+  padding: 0rem 5rem;
+}
+.intro .intro__right p {
+  margin-bottom: 2rem;
+}
+.intro .intro__right h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.intro .intro__right small {
+  color: #00000d;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  display: flex;
+}
+.intro .intro__right a {
+  background-color: #00000d;
+  color: #fff;
+  border-radius: 0rem;
+}
+.intro .intro__right a:hover {
+  background-color: transparent;
+  border: 1px solid #00000d;
+  color: #00000d;
+}
+
+.places small {
+  color: #556cee;
+  font-weight: 700;
+}
+.places small:hover {
+  color: #00000d;
+}
+
+.dates small {
+  font-weight: 500;
+  color: #00000d;
+  opacity: 0.5;
+}
+
+.ReadMe small {
+  color: #00000d;
+  font-weight: 700;
+}
+.ReadMe small:hover {
+  color: #556cee;
+}
+
+.aboutPost {
+  background-color: #fff;
+  padding: 5rem 0;
+}
+.aboutPost__wrapper {
+  padding: 2rem 1rem;
+}
+.aboutPost .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.aboutPost .title p {
+  max-width: 70rem;
+}
+.aboutPost__blog {
+  display: flex;
+  gap: 1rem;
+}
+.aboutPost__blog img {
+  width: 350px;
+  height: 150px;
+}
+.aboutPost__blog--details {
+  color: #00000d;
+}
+.aboutPost__blog--details h2 {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+.aboutPost__blog--details p {
+  margin-bottom: 1rem;
+}
+.aboutPost__blog--details .dates {
+  margin-bottom: 1rem;
+}
+.aboutPost__images {
+  display: grid;
+  grid-template-columns: 1.5fr 1.5fr;
+  width: 100%;
+  gap: 3rem;
+}
+.aboutPost__content {
+  display: flex;
+}
+
+.aboutDestination {
+  padding: 5rem 1rem;
+}
+.aboutDestination__wrapper {
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.aboutDestination__wrapper a {
+  display: flex;
+  margin: 4rem 2rem;
+  border-radius: 0rem;
+}
+.aboutDestination .title {
+  color: #00000d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.aboutDestination .title h2 {
+  font-size: 3rem;
+  text-align: center;
+  letter-spacing: 3px;
+  font-weight: 700;
+}
+.aboutDestination .title small {
+  opacity: 0.6;
+}
+.aboutDestination .imageCards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+.aboutDestination a.btn.bg--accent {
+  border-radius: 0rem;
+}
+.aboutDestination a.btn.bg--accent:hover {
+  background-color: transparent;
+  border: 1px solid #556cee;
+  color: #00000d;
+}
+
+.aboutBlog {
+  font-family: "Playfair Display", serif;
+  padding: 5rem 0;
+}
+.aboutBlog__wrapper {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 4rem;
+}
+.aboutBlog .leftBlog img {
+  width: 800px;
+  height: 470px;
+}
+.aboutBlog .leftBlog h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.aboutBlog .leftBlog p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+.aboutBlog .leftBlog .cards {
+  position: relative;
+}
+.aboutBlog .leftBlog .cards .dates {
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  width: 100%;
+  border-bottom: 1px solid rgba(71, 68, 68, 0.205);
+}
+.aboutBlog .leftBlog .cards .dates small {
+  padding-bottom: 0.5rem;
+}
+.aboutBlog .leftBlog .blogBtn {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  top: 10px;
+  right: 25px;
+}
+.aboutBlog .leftBlog .blogBtn i {
+  transform: translateY(2rem);
+  padding: 1rem 1.2rem;
+  position: absolute;
+  width: 50px;
+  color: #00000d;
+  border-radius: 0rem;
+  background-color: #fff;
+}
+.aboutBlog .leftBlog a.btn.bg--accent {
+  display: block;
+  width: 5rem;
+  height: 1.5rem;
+  font-size: 12px;
+}
+.aboutBlog .leftBlog a.btn.bg--accent small {
+  transform: translateY(-0.5rem);
+  display: flex;
+  justify-content: center;
+}
+.aboutBlog .leftBlog a.btn.bg--accent:hover {
+  background-color: #fff;
+  border: 1px solid #556cee;
+  color: #00000d;
+}
+.aboutBlog .rightBlog img {
+  width: 550px;
+  height: 470px;
+}
+.aboutBlog .rightBlog h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.aboutBlog .rightBlog p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  width: 30rem;
+}
+.aboutBlog .rightBlog .cards {
+  position: relative;
+}
+.aboutBlog .rightBlog .blogBtn {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  top: 10px;
+  right: 50px;
+}
+.aboutBlog .rightBlog a.btn.bg--accent {
+  display: block;
+  width: 15rem;
+  height: 1.5rem;
+  font-size: 11px;
+}
+.aboutBlog .rightBlog a.btn.bg--accent small {
+  transform: translateY(-0.5rem);
+  display: flex;
+  justify-content: center;
+}
+.aboutBlog .rightBlog a.btn.bg--accent:hover {
+  background-color: #fff;
+  border: 1px solid #556cee;
+  color: #00000d;
+}
+.aboutBlog .rightBlog .leftSearch {
+  padding: 1rem 0rem;
+}
+.aboutBlog .rightBlog .leftSearch form {
+  display: flex;
+}
+.aboutBlog .rightBlog .leftSearch form input {
+  width: 85%;
+  background-color: #fff;
+  border-bottom: 2px solid rgba(71, 68, 68, 0.205);
+  border-left: 1px solid rgba(71, 68, 68, 0.205);
+}
+.aboutBlog .rightBlog .leftSearch a.btn.bg--accent {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1.5rem;
+  color: #fff;
+  border-radius: 0rem;
+  width: 10px;
+  height: 10px;
+  background-color: #00000d;
+  border: 1px solid #00000d;
+}
+.aboutBlog .rightBlog .leftSearch a.btn.bg--accent:hover {
+  background-color: #fff;
+  border: 1px solid #00000d;
+  color: #00000d;
+}
+.aboutBlog .rightBlog .smolBlogs {
+  display: grid;
+  gap: 4rem;
+}
+.aboutBlog .rightBlog .smolCards {
+  display: flex;
+}
+.aboutBlog .rightBlog .smolCards img {
+  width: 150px;
+  height: 150px;
+  margin-right: 2rem;
+}
+.aboutBlog .rightBlog .smolCards--details {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.aboutBlog .rightBlog .smolCards--details .places small {
+  font-size: 15px;
+}
+.aboutBlog .rightBlog .smolCards--details .dates small {
+  font-size: 10.5px;
+}
+.aboutBlog .rightBlog .smolCards--details h2 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.Bottom {
+  font-family: #fff;
+  padding: 5rem 0;
+}
+.Bottom .container {
+  padding: 0rem 0rem;
+}
+.Bottom__wrapper {
+  display: flex;
+}
+.Bottom .image__slider {
+  position: relative;
+}
+.Bottom .title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.Bottom .title h2 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+.Bottom .title small {
+  opacity: 0.9;
+  display: flex;
+  color: #00000d;
+}
+.Bottom .title small i {
+  color: purple;
+  font-size: 1.5rem;
+}
+.Bottom .cards {
+  position: relative;
+}
+.Bottom .cards img {
+  position: relative;
+  width: 100vw;
+  height: 300px;
+}
+
+.aboutBanner {
+  position: relative;
+  background: url(/IMG/wow.png);
+  background-color: #00000d;
+  width: 96vw;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  display: flex;
+  font-display: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 2.5rem;
+}
+.aboutBanner__wrapper {
+  padding: 2rem 1rem;
+}
+.aboutBanner__content {
+  position: relative;
+  font-family: "Playfair Display", serif;
+}
+.aboutBanner__content h1 {
+  color: #fff;
+  font-size: 6rem;
+  font-weight: 700;
+}
+.aboutBanner__content p {
+  margin-bottom: 2rem;
+  color: #fff;
+}
+.aboutBanner__content p img:nth-child(2) {
+  position: absolute;
+  width: 10rem;
+  left: 100%;
+  height: 10rem;
+}
+.aboutBanner__content p img {
+  position: absolute;
+  width: 10rem;
+  left: -10%;
+  height: 10rem;
+}
+.aboutBanner__content a.btn.bg--accent {
+  margin-top: 2rem;
+  border-radius: 0rem;
+}
+.aboutBanner__content a.btn.bg--accent:hover {
+  background-color: #fff;
+  border: 1px solid #00000d;
+  color: #00000d;
+}
+
+.Destination {
+  padding: 5rem 1rem;
+}
+.Destination__wrapper {
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.Destination__wrapper a {
+  display: flex;
+  margin: 4rem 2rem;
+  border-radius: 0rem;
+}
+.Destination .title {
+  color: #00000d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.Destination .title h2 {
+  font-size: 3rem;
+  text-align: center;
+  letter-spacing: 3px;
+  font-weight: 700;
+}
+.Destination .title small {
+  opacity: 0.6;
+}
+.Destination .imageCards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0rem;
+}
+.Destination a.btn.bg--accent {
+  border-radius: 0rem;
+}
+.Destination a.btn.bg--accent:hover {
+  background-color: transparent;
+  border: 1px solid #556cee;
+  color: #00000d;
+}
+
+.blogBanner {
+  position: relative;
+  background: url(/IMG/wow.png);
+  background-color: #00000d;
+  width: 96vw;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  display: flex;
+  font-display: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 2.5rem;
+}
+.blogBanner__wrapper {
+  padding: 2rem 1rem;
+}
+.blogBanner__content {
+  position: relative;
+  font-family: "Playfair Display", serif;
+}
+.blogBanner__content h1 {
+  color: #fff;
+  font-size: 6rem;
+  font-weight: 700;
+}
+.blogBanner__content p {
+  margin-bottom: 2rem;
+  color: #fff;
+}
+.blogBanner__content p img {
+  position: absolute;
+  width: 10rem;
+  left: 100%;
+  height: 10rem;
+}
+.blogBanner__content p img:last-child {
+  position: absolute;
+  width: 10rem;
+  left: -10%;
+  height: 10rem;
+}
+.blogBanner__content a.btn.bg--accent {
+  margin-top: 2rem;
+  border-radius: 0rem;
+}
+.blogBanner__content a.btn.bg--accent:hover {
+  background-color: #fff;
+  border: 1px solid #00000d;
+  color: #00000d;
+}
+
+.blogPost {
+  background-color: #fff;
+  padding: 5rem 0;
+}
+.blogPost__wrapper {
+  padding: 2rem 1rem;
+}
+.blogPost .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.blogPost .title p {
+  max-width: 70rem;
+}
+.blogPost__blog {
+  display: flex;
+  gap: 1rem;
+}
+.blogPost__blog img {
+  width: 350px;
+  height: 150px;
+}
+.blogPost__blog--details {
+  color: #00000d;
+}
+.blogPost__blog--details h2 {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+.blogPost__blog--details p {
+  margin-bottom: 1rem;
+}
+.blogPost__blog--details .dates {
+  margin-bottom: 1rem;
+}
+
+.homeBottom {
+  font-family: #fff;
+  padding: 5rem 0;
+}
+.homeBottom .container {
+  padding: 0rem 0rem;
+}
+.homeBottom__wrapper {
+  display: flex;
+}
 .homeBottom .image__slider {
   position: relative;
 }
@@ -1680,21 +2427,137 @@ img {
   height: 300px;
 }
 
-.homeBottom .tns-outer {
+.contactBanner {
+  position: relative;
+  background: url(/IMG/wow.png);
+  background-color: #00000d;
+  width: 96vw;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  display: flex;
+  font-display: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 2.5rem;
+}
+.contactBanner__wrapper {
+  padding: 2rem 1rem;
+}
+.contactBanner__content {
+  position: relative;
+  font-family: "Playfair Display", serif;
+}
+.contactBanner__content h1 {
+  color: #fff;
+  font-size: 6rem;
+  font-weight: 700;
+}
+.contactBanner__content p {
+  margin-bottom: 2rem;
+  color: #fff;
+}
+.contactBanner__content p img:nth-child(2) {
+  position: absolute;
+  width: 10rem;
+  left: 100%;
+  height: 10rem;
+}
+.contactBanner__content p img {
+  position: absolute;
+  width: 10rem;
+  left: -10%;
+  height: 10rem;
+}
+.contactBanner__content a.btn.bg--accent {
+  margin-top: 2rem;
+  border-radius: 0rem;
+}
+.contactBanner__content a.btn.bg--accent:hover {
+  background-color: #fff;
+  border: 1px solid #00000d;
+  color: #00000d;
+}
+
+.contact {
+  font-size: "Playfair Display", serif;
+  padding: 5rem 0;
+}
+.contact__wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0rem;
+}
+.contact .contactMap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 3rem;
+}
+.contact .contactMap iframe {
+  width: 80rem;
+}
+.contact__image img {
+  width: 35rem;
+  height: 40rem;
+}
+.contact__form h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.contact__form p {
+  margin-bottom: 4rem;
+}
+.contact__form input, .contact__form textarea {
+  width: 98%;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  background-color: transparent;
+  border: 1px solid rgba(150, 150, 150, 0.288);
+}
+.contact__form textarea {
+  height: 3rem;
+  width: 50rem;
+  margin-bottom: 3rem;
+}
+.contact__form input:focus, .contact__form textarea:focus,
+.contact__form input:enabled,
+.contact__form textarea:enabled {
+  color: #556cee;
+}
+.contact__form .contactME {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contact__form .contactBtn a {
+  border-radius: 0rem;
+}
+.contact__form .contactBtn a:hover {
+  background-color: transparent;
+  color: #00000d;
+  border: 1px solid #556cee;
+}
+
+.Bottom .tns-outer {
   overflow: hidden;
   max-width: 100%;
 }
-.homeBottom .tns-outer img {
+.Bottom .tns-outer img {
   width: 100%;
 }
-.homeBottom .tns-outer > button {
+.Bottom .tns-outer > button {
   display: none;
 }
 
-.homeBottom .tns-nav {
+.Bottom .tns-nav {
   text-align: center;
 }
-.homeBottom .tns-nav button {
+.Bottom .tns-nav button {
   margin: 2rem 0.5rem;
   width: 1rem;
   height: 1rem;
@@ -1702,7 +2565,7 @@ img {
   border: none;
   background-color: #fff;
 }
-.homeBottom .tns-nav button-active {
+.Bottom .tns-nav button-active {
   background-color: #00000d;
 }
 
@@ -1711,7 +2574,7 @@ img {
 }
 #controls .prev, #controls .next {
   color: #fff;
-  font-size: 2rem;
+  font-size: 3rem;
   position: relative;
   bottom: -8rem;
   left: 4rem;
@@ -1719,13 +2582,8 @@ img {
 #controls .prev:hover, #controls .next:hover {
   color: #00000d;
 }
-@media screen and (max-width: 520px) {
-  #controls .prev, #controls .next {
-    display: none;
-  }
-}
 #controls .next {
-  left: 90rem;
+  left: 140rem;
   bottom: -8rem;
   position: relative;
 }/*# sourceMappingURL=main.min.css.map */
